@@ -60,4 +60,10 @@ singleSpa.registerApplication(
   showWhenPrefix(['/react']),
 );
 
+singleSpa.registerApplication(
+  'react-ssr-ch',
+  () => import('./extra/react-ssr-ch'),
+  showWhenPrefix(['/zhihu-demo']),
+);
+
 singleSpa.start();
